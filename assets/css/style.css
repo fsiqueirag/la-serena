@@ -78,6 +78,7 @@ nav ul {
 
 .navbar__menu, .navbar__social-icons, nav h2 {
     flex: 1;
+    padding: 5px;
 }
 
 li {
