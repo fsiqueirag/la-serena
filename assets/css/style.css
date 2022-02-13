@@ -174,7 +174,7 @@ nav li.active a {
 }
 
 
-#carousel {
+#carousel-mobile, #carousel-desktop {
     animation: fade-in 4s ease-in-out both;
     height: calc(100vh - 80px);
     width: 100%;
@@ -184,33 +184,33 @@ nav li.active a {
     height: 100%;
 }
 
-#carousel .carousel-item {
+.carousel-item {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
 }
 
-#carousel .carousel-item-1 {
+.carousel-item-1 {
     background-image: url(../images/diurna-1.jpg);
 }
 
-#carousel .carousel-item-2 {
+.carousel-item-2 {
     background-image: url(../images/diurna-2.jpg);
 }
 
-#carousel .carousel-item-3 {
+.carousel-item-3 {
     background-image: url(../images/home-1.jpg);
 }
 
-#carousel .carousel-item-4 {
+.carousel-item-4 {
     background-image: url(../images/home-2.jpg);
 }
 
-#carousel .carousel-item-mb-1 {
+.carousel-item-mb-1 {
     background-image: url(../images/vertical-1.jpg);
 }
 
-#carousel .carousel-item-mb-2 {
+.carousel-item-mb-2 {
     background-image: url(../images/vertical-2.jpg);
 }
 
@@ -441,7 +441,7 @@ nav li.active a {
         order: 2;
     }
 
-    #carousel .carousel-item {
+    .carousel-item {
         background-position: center;
     }
 
