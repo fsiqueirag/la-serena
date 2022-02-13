@@ -165,6 +165,14 @@ nav li.active a {
     color: #1db954;
 } */
 
+.carousel-mobile {
+    display: none;
+}
+
+.carousel-desktop {
+    display: block;
+}
+
 
 #carousel {
     animation: fade-in 4s ease-in-out both;
@@ -196,6 +204,14 @@ nav li.active a {
 
 #carousel .carousel-item-4 {
     background-image: url(../images/home-2.jpg);
+}
+
+#carousel .carousel-item-mb-1 {
+    background-image: url(../images/vertical-1.jpg);
+}
+
+#carousel .carousel-item-mb-2 {
+    background-image: url(../images/vertical-2.jpg);
 }
 
 .bio__section {
@@ -298,6 +314,7 @@ nav li.active a {
 .video__container iframe {
     height: 30vw;
     max-width: 950px;
+    min-height: 300px;
     width: 100%;
 }
 
@@ -387,10 +404,29 @@ nav li.active a {
 }
 
 @media (max-width: 767px) {
-    .videos__section h2:before, .bio__section h2:before, .contacto__section h2:before {
-        font-size: 16vw;
+
+    .carousel-mobile {
+        display: block;
+    }
+    
+    .carousel-desktop {
+        display: none;
     }
 
+    .videos__section h2:before, .bio__section h2:before, .contacto__section h2:before {
+        font-size: 16vw;
+        top: -40px;
+    }
+
+    .videos__section {
+        padding-top: 12rem;
+        padding-bottom: 10rem;
+    }
+
+    .video__container iframe {
+        min-height: 200px;
+        width: 100%;
+    }
     nav.bottom {
         flex-direction: column;
         height: auto;
@@ -409,10 +445,24 @@ nav li.active a {
         background-position: center;
     }
 
-
     .bio__section {
         padding: 8rem 3rem 16rem;
         text-align: center;
+    }
+
+    .contacto__section {
+        padding: 12rem 3rem 4rem;
+    }
+
+    .rombo {
+        bottom: -125px;
+        left: 0;
+        margin: auto;
+        max-width: 450px;
+        position: absolute;
+        right: 0;
+        width: 250px;
+        z-index: 2;
     }
 }
 
